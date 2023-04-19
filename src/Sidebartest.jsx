@@ -1,62 +1,63 @@
 const Sidebartest = () => {
   return (
-    <nav className="" id="sidebar">
-      <div>
-        <a href="#">
-          <span>
-            AdminKit{" "}
-            <sup>
-              <small>Pro</small>
-            </sup>
-          </span>
-          <img
-            src="./src/assets/logo.png"
+    <nav className="bg-sidebar-bg text-white max-w-xs min-w-max" id="sidebar">
+      <div className="sticky top-0 w-64 left-0">
+        <a href="#" className="block text-white px-5 py-5">
+        <img
+            src="./public/assets/logo.png"
             alt=""
             className={`mx-auto ${
               open ? "w-32" : "w-16"
             } cursor-pointer duration-500`}
           />
+          <span className="block text-center mt-4 font-bold text-xl">
+            VipresNET
+            <sup>
+              <small className="absolute left-1 top-1 z-10 uppercase font-light">Pro</small>
+            </sup>
+          </span>
         </a>
-        <div className="sidebar-user">
-          <div className="">
-            <div className="">
+        <div className="sidebar-user p-3">
+          <div className="flex justify-center">
+            <div className="shrink-0">
               <img
-                src="./src/assets/img/avatars/avatar.jpg"
-                class="avatar img-fluid rounded me-1"
-                alt="Charles Hall"
+                src="./public/assets/img/avatars/avatar.jpg"
+                className="w-10 h-10 max-w-full rounded mr-1"
+                alt="Manolo Cabrera"
               />
             </div>
-            <div className="">
-              <a href="#" className="sidebar-user-title-dropdown-toggle">
+            <div className="flex-grow px-2 -mt-1">
+              <a href="#" className="nowrap cursor-pointer">
                 Manolo Cabrera
               </a>
-              <div class="dropdown-menu dropdown-menu-start">
-                <a class="dropdown-item" href="pages-profile.html">
-                  <i class="align-middle me-1" data-feather="user"></i> Profile
+              <div className="dropdown-menu dropdown-menu-start hidden">
+                <a className="dropdown-item" href="pages-profile.html">
+                  <i className="align-middle me-1" data-feather="user"></i> Profile
                 </a>
-                <a class="dropdown-item" href="#">
-                  <i class="align-middle me-1" data-feather="pie-chart"></i>{" "}
+                <a className="dropdown-item" href="#">
+                  <i className="align-middle me-1" data-feather="pie-chart"></i>{" "}
                   Analytics
                 </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="pages-settings.html">
-                  <i class="align-middle me-1" data-feather="settings"></i>{" "}
+                <div className="dropdown-divider"></div>
+                <a className="dropdown-item" href="pages-settings.html">
+                  <i className="align-middle me-1" data-feather="settings"></i>{" "}
                   Settings & Privacy
                 </a>
-                <a class="dropdown-item" href="#">
-                  <i class="align-middle me-1" data-feather="help-circle"></i>{" "}
+                <a className="dropdown-item" href="#">
+                  <i className="align-middle me-1" data-feather="help-circle"></i>{" "}
                   Help Center
                 </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">
+                <div className="dropdown-divider"></div>
+                <a className="dropdown-item" href="#">
                   Log out
                 </a>
               </div>
 
-              <div class="sidebar-user-subtitle">Designer</div>
+              <div class="text-light-white -mt-1">Designer</div>
             </div>
           </div>
         </div>
+        {'Voy oir aqui con el css'}
         <ul className="sidebar-nav">
           <li className="sidebar-header">Pages</li>
           <li className="sidebar-item">

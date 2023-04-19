@@ -24,4 +24,4 @@ dist-ssr
 *.sln
 *.sw?
 adminkit-pro-3-3-0
-src/assets
+public/assets
