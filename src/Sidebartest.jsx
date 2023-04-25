@@ -4,7 +4,7 @@ const Sidebartest = () => {
       <div className="sticky top-0 w-64 left-0">
         <a href="#" className="block text-white px-5 py-5">
         <img
-            src="./public/assets/logo.png"
+            src="./assets/logo.png"
             alt=""
             className={`mx-auto ${
               open ? "w-32" : "w-16"
@@ -17,11 +17,11 @@ const Sidebartest = () => {
             </sup>
           </span>
         </a>
-        <div className="sidebar-user p-3">
+        <div className="sidebar-user py-3 px-6">
           <div className="flex justify-center">
             <div className="shrink-0">
               <img
-                src="./public/assets/img/avatars/avatar.jpg"
+                src="./assets/img/avatars/avatar.jpg"
                 className="w-10 h-10 max-w-full rounded mr-1"
                 alt="Manolo Cabrera"
               />
@@ -57,12 +57,13 @@ const Sidebartest = () => {
             </div>
           </div>
         </div>
-        {'Voy oir aqui con el css'}
-        <ul className="sidebar-nav">
-          <li className="sidebar-header">Pages</li>
-          <li className="sidebar-item">
-            <a href="" className="">
-              Dashboards
+
+        <ul className="sidebar-nav flex-grow">
+          <li className="sidebar-header bg-opacity-0 text-sm pt-6 pl-6 pr-1 pb-1">Pages</li>
+          <li className="sidebar-item list-item">
+            <a href="" className="sidebar-link hover:text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sliders align-middle inline-block"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
+              <span className="align-middle px-2 text-base">Dashboard</span>
             </a>
 
             <ul className="sidebar-dropdown-list-unstyled">
